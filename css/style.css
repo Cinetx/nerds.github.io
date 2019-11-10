@@ -88,18 +88,18 @@ a {
   margin: 0 auto;
 }
 .header-slider--1 {
-  background-image: url("/images/slide1.png");
+  background-image: url("../images/slide1.png");
   background-repeat: no-repeat;
   background-position: 100% 0%;
 }
 .header-slider--2 {
-  background-image: url("/images/slide2.png");
+  background-image: url("../images/slide2.png");
   background-repeat: no-repeat;
   background-position: 100% 0%;
   background-size: 52%;
 }
 .header-slider--3 {
-  background-image: url("/images/slide3.png");
+  background-image: url("../images/slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 0%;
 }
@@ -308,7 +308,7 @@ a {
   margin-bottom: 30px;
 }
 .find {
-  background-image: url("/images/map.jpg");
+  background-image: url("../images/map.jpg");
   display: block;
   height: 415px;
   margin-top: 60px;
