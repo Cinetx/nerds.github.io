@@ -507,7 +507,7 @@ hr {
   position: relative;
 }
 .catalog__section__subwrapper:after {
-  content: url("/images/svg/browser.svg");
+  content: url("../images/svg/browser.svg");
   opacity: 0.3;
   position: absolute;
   top: 0;
@@ -562,7 +562,7 @@ input[type="checkbox"]:not(:checked) + label:before,
 
 }
 .catalog-radio--input:not(:checked) + .catalog-radio--label:before{
-  content: url("/images/svg/radio-off.svg");
+  content: url("../images/svg/radio-off.svg");
   margin-top: -4px;
   fill: #b9b9b9;
   opacity: 0.3;
@@ -575,13 +575,13 @@ input[type="checkbox"]:not(:checked) + label:before,
 
 }
 .catalog-radio--input:checked + .catalog-radio--label:before{
-  content: url("/images/svg/radio-on.svg");
+  content: url("../images/svg/radio-on.svg");
   margin-top: -4px;
   opacity: 0.3;
 }
 
 input[type="checkbox"]:not(:checked) + label:before {
-  content: url("/images/svg/checkbox-off.svg");
+  content: url("../images/svg/checkbox-off.svg");
 
 }
 
@@ -606,7 +606,7 @@ input[type="checkbox"]:not(:checked) + label:after,
 }
 
 input[type="checkbox"]:checked + label:after{
-  content: url("/images/svg/checkbox-on.svg");
+  content: url("../images/svg/checkbox-on.svg");
   position: absolute;
   left: 0;
   top: 0;
