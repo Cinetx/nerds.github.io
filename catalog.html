@@ -49,13 +49,15 @@
     <div class="main-catalog__wrapper">
 <aside class="aside__catalog">
     <h3>СТОИМОСТЬ:</h3>
-    <div>
+    <div class="price__section">
         <input type="range">
-        <p>ОТ
-        <textarea name="" id=""></textarea>
-        ДО
-        <textarea name="" id=""></textarea>
-    </p>
+      <div class="price__section__wrapper">
+        <p>ОТ</p>
+        <textarea placeholder="0" name=""></textarea>
+        <p>ДО</p>
+        <textarea placeholder="15 000" name="" ></textarea>
+        </div>
+
     </div>
 
     <div>
@@ -75,29 +77,29 @@
                 </div>
     </div>
 
-    <div>
+    <div class="checkbox-section">
         <h3>ОСОБЕННОСТИ:</h3>
-        <div>
+        <div class="catalog-checkbox__wrapper">
             <input type="checkbox" id="cb1"> <label for="cb1">Слайдер</label>
         </div>
 
-                    <div>
+                    <div class="catalog-checkbox__wrapper">
                     <input type="checkbox" id="cb2"> <label for="cb2">Блок преимуществ</label>
                     </div>
 
-                    <div>
+                    <div class="catalog-checkbox__wrapper">
                     <input type="checkbox" id="cb3"> <label for="cb3">Новости</label>
                     </div>
 
-                    <div>
-                    <input type="checkbox" id="cb3"> <label for="cb3">Галерея</label>
+                    <div class="catalog-checkbox__wrapper">
+                    <input type="checkbox" id="cb4"> <label for="cb4">Галерея</label>
                     </div>
 
-                    <div>
-                    <input type="checkbox" id="cb3"> <label for="cb3">Корзина</label>
+                    <div class="catalog-checkbox__wrapper">
+                    <input type="checkbox" id="cb5"> <label for="cb5">Корзина</label>
                     </div>
     </div>
-    <a href="#">ПОКАЗАТЬ</a>
+    <a class="page page--aside" href="#">ПОКАЗАТЬ</a>
 </aside>
 
 <section class="main-catalog__section">
@@ -128,10 +130,10 @@
         </div>
 
     <div>
-        <a href="">1</a>
-        <a href="">2</a>
-        <a href="">3</a>
-        <a href="">СЛЕДУЮЩАЯ</a>
+        <a class="page page--active" href="#">1</a>
+        <a class="page" href="#">2</a>
+        <a class="page" href="#">3</a>
+        <a class="page page--next" href="#">СЛЕДУЮЩАЯ</a>
     </div>
 </section>
 </div>
