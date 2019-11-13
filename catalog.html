@@ -6,6 +6,7 @@
   <title>Webdesign</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
 </head>
 
 <body class="catalog">
@@ -49,16 +50,30 @@
     <div class="main-catalog__wrapper">
 <aside class="aside__catalog">
     <h3>СТОИМОСТЬ:</h3>
-    <div class="price__section">
-        <input type="range">
-      <div class="price__section__wrapper">
-        <p>ОТ</p>
-        <textarea placeholder="0" name=""></textarea>
-        <p>ДО</p>
-        <textarea placeholder="15 000" name="" ></textarea>
-        </div>
 
+
+  <div class="easy-basket-filter">
+
+
+
+
+    <div class="easy-basket-filter-info">
+      <div class="easy-basket-filter-info__wrapper">
+      <p class="iLower">ОТ</p><input type="text" class="easy-basket-lower" value="0" min="0" max="15000" maxlength=6/>
+      </div>
+      <div class="easy-basket-filter-info__wrapper">
+      <p class="iUpper">ДО</p><input type="text" class="easy-basket-upper" value="15000" min="0" max="15000" maxlength=6/>
+      </div>
     </div>
+
+    <div class="easy-basket-filter-range">
+      <input type="range" class="lower range" step="any" min="0" max="15000" value="0"/>
+      <input type="range" class="upper range" step="any" min="0" max="15000" value="15000"/>
+      <div class="fill"></div>
+    </div>
+
+
+  </div>
 
     <div>
         <h3>СЕТКА:</h3>
@@ -115,17 +130,59 @@
     </div>
 
     <div class="catalog__section__img">
-      <div class="catalog__section__subwrapper"><img src="./images/catalog/img-sedona.jpg" alt=""></div>
-        <div class="catalog__section__subwrapper"><img src="./images/catalog/img-pink.jpg" alt="">
+      <div class="catalog__section__subwrapper">
+        <img src="./images/catalog/img-sedona.jpg" alt="">
+        <div class="catalog__section__content">
+          <h3 class="catalog__section__content__title">SEDONA</h3>
+          <p class="catalog__section__content__text">Информационный сатй для туристов</p>
+          <a class="catalog__section__content__button">9 900 РУБ.</a>
         </div>
-          <div class="catalog__section__subwrapper"><img src="./images/catalog/img-barbershop.jpg" alt=""></div>
+      </div>
 
-        <div class="catalog__section__subwrapper"><img src="./images/catalog/img-mishka.jpg" alt="">
-        </div>
-          <div class="catalog__section__subwrapper"><img src="./images/catalog/img-aplus.jpg" alt="">
+        <div class="catalog__section__subwrapper">
+          <img src="./images/catalog/img-pink.jpg" alt="">
+          <div class="catalog__section__content">
+            <h3 class="catalog__section__content__title">PINK APP</h3>
+            <p class="catalog__section__content__text">Продуктивный лендинг приложение для iOS и Android</p>
+            <a class="catalog__section__content__button">9 900 РУБ.</a>
           </div>
-          <div class="catalog__section__subwrapper"><img src="./images/catalog/img-kvast.jpg" alt="">
+        </div>
 
+          <div class="catalog__section__subwrapper">
+            <img src="./images/catalog/img-barbershop.jpg" alt="">
+            <div class="catalog__section__content">
+              <h3 class="catalog__section__content__title">BARBERSHOP</h3>
+              <p class="catalog__section__content__text">Сайт салоны красоты. Для мужчин, да</p>
+              <a class="catalog__section__content__button">9 900 РУБ.</a>
+            </div>
+          </div>
+
+        <div class="catalog__section__subwrapper">
+          <img src="./images/catalog/img-mishka.jpg" alt="">
+          <div class="catalog__section__content">
+            <h3 class="catalog__section__content__title">MISHKA</h3>
+            <p class="catalog__section__content__text">Интернет-магазин вязаных игрушек</p>
+            <a class="catalog__section__content__button">9 900 РУБ.</a>
+          </div>
+        </div>
+
+          <div class="catalog__section__subwrapper">
+            <img src="./images/catalog/img-aplus.jpg" alt="">
+            <div class="catalog__section__content">
+              <h3 class="catalog__section__content__title">A PLUS</h3>
+              <p class="catalog__section__content__text">Лендинг курсов повышения квалификации</p>
+              <a class="catalog__section__content__button">9 900 РУБ.</a>
+            </div>
+          </div>
+
+          <div class="catalog__section__subwrapper">
+            <img src="./images/catalog/img-kvast.jpg" alt="">
+            <div class="catalog__section__content">
+              <h3 class="catalog__section__content__title">КВАСТ</h3>
+              <p class="catalog__section__content__text">Промо-сайт производителя
+                крафтового кваса</p>
+              <a class="catalog__section__content__button">9 900 РУБ.</a>
+            </div>
           </div>
         </div>
 
@@ -165,6 +222,7 @@
   </section>
 
 </footer>
+<script src="js/range.js"></script>
 </body>
 
 </html>
