@@ -41,7 +41,7 @@ a {
   outline: none;
 }
 .user-basket-list:before {
-  content: url("/images/svg/cart-icon.svg");
+  content: url("../images/svg/cart-icon.svg");
   padding-right: 5px;
 }
 .header-logo {
